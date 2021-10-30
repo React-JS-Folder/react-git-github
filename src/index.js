@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppConditionalRendering from './AppConditionalRendering';
 import './index.css';
-import AppCounter from './AppCounter';
-import AppToggle from './AppToggle';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppCounter />
-    <AppToggle />
+
+    <AppConditionalRendering />
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
