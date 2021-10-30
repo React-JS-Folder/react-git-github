@@ -1,0 +1,27 @@
+Basic State
+
+State = Data stored in an app at a specific time
+useState Hook
+      Hook - function that hooks into your component
+Using the React Developer Tools to check State
+
+Create Counter, Create Toggle (using prevState)
+
+By default React will only work with the last useState value
+
+example:
+      function increase() {
+            setCount(count + 5);
+            setCount(count + 10);  it works as css the last setCount will override 
+      }
+      increase()    // returns count + 10
+
+
+      
+      prevState is a keyword that will add all useState movements.
+
+      function increase() {
+            setCount(prevState => prevState + 5);  it will find previous value + 5
+            setCount(prevState => prevState + 10);  it will find previous value + 10
+      }
+      increase()    // returns count + 15
