@@ -1,0 +1,33 @@
+Conditional Rendering using Object's properties like arrays
+  There are two valid ways to get an object property 
+    object.property
+    object[property] 
+
+
+1. Create an object with the greetings for each person when they login
+
+const welcomeTextGreetins = {
+  admin: 'Hi admin',
+  shopManager: 'Hi shop manager',
+  customer: 'Welcome customer',
+  guest: 'Welcome guest'
+}
+
+2. Create a user object
+
+const user = {
+  role: 'customer',
+  name: 'Mitchel',
+  isAuthenticated: true
+}
+
+3. destructuring the user object
+const {role, isAuthenticated} = user;
+    __________________________________________________________________
+
+    <p className={ isAuthenticated ? 'welcomeTextAuthed' : 'welcomeText'} >     // set the style on condition 
+      {welcomeTextGreetins[role] }                              // the object can be retrieve properties like an array
+    </p>       
+
+
+                                                    

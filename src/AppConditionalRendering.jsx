@@ -1,22 +1,31 @@
 import './App.css';
 
 export default function AppConditionalRendering() {
-  const user = {
-    name: 'Mitchel',
-    isAuthenticated: false
-  }
+  const welcomeTest = {
+    admin: "Hi admin",
+    shopManager: "Hi shop manager",
+    customer: "Welcome customer",
+    guest: "Welcome guest"
+  };
 
-  const {name, isAuthenticated} = user;
+  const user = {
+    role: 'guest',
+    name: 'Mitchel',
+    isAuthenticated: true
+  };
+
+  const {role, isAuthenticated} = user;
 
 
   return (
     <>
       <h1>App</h1>
-      <p className={isAuthenticated ? 'welcomeTextAuthed' : 'welcomeText'}>
-        Welcome, {isAuthenticated ? name : "Please log in"}
+      <p className={isAuthenticated ? 'welcomeTextAuthed' : 'welcomeText'}> 
+          {welcomeTest[role]}
       </p>
+      
+      {isAuthenticated && <button>Log in</button>}
 
-      {!isAuthenticated && <button>Log in</button> }
 
     </>
   )
