@@ -1,0 +1,18 @@
+Data Fetching
+ HTTP
+ Basic examples (better to use React Query)
+ Get Data (GET)
+ Set Data 
+        POST  (new)
+        PUT   (change/overwrite)
+        PATCH (partial change)
+        REMOVE
+ Axios ---------------- install axios       npm i axios   
+
+ ############################
+ HTTP (HyperText Transfer Protocool) 
+      Protocool used to transfer data over the web
+
+client -----> HTTP request ----> server
+
+client <---- HTTP response  <--------- server
