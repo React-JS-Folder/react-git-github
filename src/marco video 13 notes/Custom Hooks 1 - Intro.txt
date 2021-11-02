@@ -1,0 +1,31 @@
+CUSTOM HOOKS
+Components and Hooks are functions, so a custom hook is also a function
+When we want to share logic between multiple JavaScript functions
+
+
+                          Custom Hook    
+                                |
+                  ________________________
+                  |                        |
+                  Component A         Component B
+
+1. Create a folder called hooks 
+2. Create a component called useNumber.jsx
+3. Create a component called ComponentA.jsx 
+    Add the custom hook (function) as a value 
+
+        #############################################
+        example:
+        import React from 'react';
+        import useNumber from "./hooks/useNumber";
+        
+        export default function ComponentA() {
+            const number = useNumber();
+
+
+            console.log(number);          
+          return( );
+        }
+
+
+        #############################################

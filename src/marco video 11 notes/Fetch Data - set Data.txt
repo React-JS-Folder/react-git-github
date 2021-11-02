@@ -1,8 +1,0 @@
-Data Fetching - Set Data 
-POST  => new
-PUT   => change (overwrite)
-PATCH => partial change 
-DELETE
-
-
-File upload

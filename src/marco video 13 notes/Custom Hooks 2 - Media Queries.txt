@@ -1,0 +1,13 @@
+Task: Determine if the user is on a mobile screen
+
+  1. Using a custom hook that's shared between React components 
+  2. <= 768px is mobile 
+
+
+--------------------------------------
+useEffect()    takes an anonimous function as value
+execute code on mounting, when the dependency is empty "[]"  // exists but there is nothing inside
+
+useEffect( () => {
+  calculate()
+}, []);
