@@ -1,0 +1,23 @@
+REACT ROUTER HOOKS 
+
+It is recommended to use <Link > to go to other pages of your website
+
+import {useHistory} from 'react-router-dom';
+
+export default function ComponentLinks(){
+  const history = useHistory();
+  return (
+
+    <button onClick={ () => history.push('/login', data)} > 
+        Go to login page
+    </button>
+
+    <Link to='/login' > Go to login page </Link>  
+
+  )
+
+
+}
+
+history.push('path', data);
+history.goBack();            // no parameters, it just go back to the clicked link page
