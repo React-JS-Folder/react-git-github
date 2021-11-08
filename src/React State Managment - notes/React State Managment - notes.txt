@@ -1,0 +1,25 @@
+REACT.JS - State Managment - Intro
+
+State managmente = state of data in an App
+
+Types of State:
+    - UI State (local, e.g. light/dark mode, modal open/closed)
+    - Server Cache (API, e.g. list of users)
+
+State can be local or global (If you can keep it local, keep it there)
+      Local State example:   You can pass State to children components
+      (State) Component A 
+                          > Component B 
+                          > Component C 
+
+      Global State example:   You create a separate State container 
+      and any component of the App (website) can use the State or change it 
+
+What can you use State managment for?
+    - UI State (Props, Component Composition, Context API)
+    - Server Cache (React Query)
+
+Only use a State Managment Library if you really need to 
+      (Redux, Recoil.....)
+
+
