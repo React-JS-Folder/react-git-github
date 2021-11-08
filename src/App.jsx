@@ -1,6 +1,8 @@
 import React from 'react'
 import {useState} from 'react';
 import CalculationOverview from './components/CalculationOverview';
+import MultipliedByTwo from './components/MultipliedByTwo';
+import MultipliedCalculations from './components/MultipliedCalculations';
 import Input from './Input';
 
 export default function App() {
@@ -11,8 +13,12 @@ export default function App() {
 
 
       <Input setInputValue={setInputValue}/>
-      <CalculationOverview inputValue={inputValue}/>
-   
+     
+     <CalculationOverview>
+       <MultipliedCalculations>
+         <MultipliedByTwo inputValue={inputValue} />
+       </MultipliedCalculations>
+     </CalculationOverview>
     </div>
   )
 }

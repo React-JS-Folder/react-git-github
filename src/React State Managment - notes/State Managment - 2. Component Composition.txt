@@ -1,0 +1,30 @@
+
+Component Composition 
+
+Component Composition is when you want to share props but the components are not direct parent-child 
+It requires to wrap child component which will wrap another child component 
+Component Composition it is better than prop drilling, but it is bad choice for complex nesting 
+
+
+the exercise has this structure
+
+               App (State)
+                   |
+    -------------------------------------
+    |                                   |
+  Input                         CalculationOverview
+                                        |
+                               MultipliedCalculations
+                                        |
+                      MultipliedByTwo      MultipliedByThree  
+
+
+App.js
+
+<Input />   --this takes state from direct parent 
+
+<CalculationOverview>                            ---- return <> {children} </>
+  <MultipliedCalculations>                       ---- return <> {children} </>
+    <MultipliedByTwo inputValue={inputValue} />  ---- this takes state from parent (children props)
+  </MultipliedCalculations>
+</CalculationOverview>
