@@ -1,0 +1,18 @@
+
+Prop Drilling 
+
+Prop Drilling is when you want to share props but the components are not direct parent-child 
+It requires to import from child component which is imported from child component 
+
+the exercise has this structure
+
+               App (State)
+                   |
+    -------------------------------------
+    |                                   |
+  Input                         CalculationOverview
+                                        |
+                               MultipliedCalculations
+                                        |
+                      MultipliedByTwo      MultipliedByThree  
+

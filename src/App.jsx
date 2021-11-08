@@ -1,37 +1,18 @@
 import React from 'react'
 import {useState} from 'react';
-
-import Component_A from './components_exercise1/Component_A.jsx'
-import Input from './Components_exercise2-MultiplyBy2/Input.jsx';
-import MultipliedByTwo from './Components_exercise2-MultiplyBy2/MultipliedByTwo.jsx';
+import CalculationOverview from './components/CalculationOverview';
+import Input from './Input';
 
 export default function App() {
   const [inputValue, setInputValue] = useState(0);
-  const name = "kirk";
-  const id = 300;
-
   return (
     <div>
-      <h5>Exercise 1 - I made it before watching the tutorial</h5>
-      <Component_A name={name} id={id}/>
+      <h2>Add here all the components as lego blocks</h2>
 
-      <br />
-      <hr /> 
-      <br />
-      <h5>Exercise 2 - Multiply by 2</h5>
 
       <Input setInputValue={setInputValue}/>
-      <MultipliedByTwo inputValue={inputValue}/>
-
-
-  
-
-
-
-
-
-
-
+      <CalculationOverview inputValue={inputValue}/>
+   
     </div>
   )
 }
